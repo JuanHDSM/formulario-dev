@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  href="style.css" rel="stylesheet"/>
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="formulario">
+
+    <h1>Cadastro Dev</h1>
+
+    <p class="subtitle">Preencha os campos com suas informações</p>
+
+    <form class="form" action="#" target="_blank">
+
+      <fieldset>
+
+          <div class="datapersonal">
+          
+          <section class="datapersonal">
+          <label for="name">
+            Nome: *
+            <input type="text" id="name" required/>
+          </label>
+
+          <label for="lastname">
+            Sobrenome: *
+            <input type="text" id="lastname" required/>
+          </label>
+          </section>
+          
+          <label for="email">
+            E-mail *
+            <input type="email" id="email" required/>
+          </label>
+
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+
+        <section class="aplications" >
+
+          <p class="tecno" >De que lado da aplicação você desenvolve? *</p>
+          <label for="back">
+          <input type="radio" id="back" name="tecno" />
+          Back-End
+          </label>
+          <label for="front">
+          <input type="radio" id="front" name="tecno"/>
+          Front-End
+          </label>
+          <label for="full">
+          <input type="radio" id="full" name="tecno"/>Fullstack
+          </label>
+        </section>
+
+        <section class="nivel">
+
+          <label>
+          <p class="seniority">Senioridade: *</p>
+          <select>
+            <option selected disabled value="">Selecione</option>
+            <option>Júnior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+          </label>
+
+          </select> 
+
+        <section class="tecnology">
+
+          <p id="tecnology">Selecione as tecnologias que utiliza: *</p>
+
+          <label for="html">
+          <input type="checkbox" id="html" />
+          HTML5</label>
+
+          <label for="css">
+          <input type="checkbox" id="css" />
+          CSS3</label>
+
+          <label for="js">
+          <input type="checkbox" id="js" />
+          JAVASCRIPT</label>
+
+          <label for="python">
+          <input type="checkbox" id="python" />
+          PYTHON</label>
+
+          <label for="java">
+          <input type="checkbox" id="java" />
+          JAVA</label>
+
+          <label for="c">
+          <input type="checkbox" id="c" />
+          C#</label>
+
+        </section>
+
+        <div class="experience">
+        <label for="description">Conte um pouco sobre suas experiências</label>
+        <textarea id="description"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="button">
+        <button>Cadastrar Dev</button>
+      </div>
+
+    </form>
+
+  </div>
+
+
+</body>
+</html>
