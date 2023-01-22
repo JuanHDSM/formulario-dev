@@ -3,35 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link  href="style.css" rel="stylesheet"/>
   <title>Document</title>
 </head>
-<body>
+<body class="">
+
+
 
   <div class="formulario">
 
     <h1>Cadastro Dev</h1>
 
+    <button id="mode" onClick="darkMode()"><i class="ph-moon-fill"></i></button>
+    <button id="mode" onclick="lightMode()"><i class="ph-sun-fill"></i></button>
     <p class="subtitle">Preencha os campos com suas informações</p>
 
     <form class="form" action="#" target="_blank">
 
       <fieldset>
 
-          <div class="datapersonal">
+        <div class="datapersonal">
           
-          <section class="datapersonal">
-          <label for="name">
-            Nome: *
-            <input type="text" id="name" required/>
-          </label>
 
-          <label for="lastname">
-            Sobrenome: *
-            <input type="text" id="lastname" required/>
-          </label>
-          </section>
+            <label for="name">
+              Nome: *
+              <input type="text" id="name" required/>
+            </label>
+
+            <label for="lastname">
+              Sobrenome: *
+              <input type="text" id="lastname" required/>
+            </label>
+          
           
           <label for="email">
             E-mail *
@@ -46,17 +53,17 @@
 
         <section class="aplications" >
 
-          <p class="tecno" >De que lado da aplicação você desenvolve? *</p>
+          <p class="tech" >De que lado da aplicação você desenvolve? *</p>
           <label for="back">
-          <input type="radio" id="back" name="tecno" />
+          <input type="radio" id="back" name="tech" />
           Back-End
           </label>
           <label for="front">
-          <input type="radio" id="front" name="tecno"/>
+          <input type="radio" id="front" name="tech"/>
           Front-End
           </label>
           <label for="full">
-          <input type="radio" id="full" name="tecno"/>Fullstack
+          <input type="radio" id="full" name="tech"/>Fullstack
           </label>
         </section>
 
@@ -110,13 +117,16 @@
       </fieldset>
 
       <div class="button">
-        <button>Cadastrar Dev</button>
+        <button class="sign-up">Cadastrar Dev</button>
       </div>
 
     </form>
 
   </div>
+  
 
+<script src="./script.js" defer></script>
+<script src="https://unpkg.com/phosphor-icons"></script>
 
 </body>
 </html>

@@ -1,12 +1,23 @@
+
+
 body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
   padding: 0;
   box-sizing: border-box;
-  justify-content: center;
   font-family: sans-serif;
   font-size: 14px;
-  background-color: #B0C4DE;
   border: none;
+  color: white;
+}
+
+body.dark {
+  background-color: #111;
+}
+
+i {
+  font-size: 25px;
 }
 
 h1, p{
@@ -14,11 +25,20 @@ h1, p{
   padding: 0;
   box-sizing: border-box;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: 'solitreo', sans-serif;
 }
 
 p {
   font-weight: bold;
+}
+
+#mode {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: white;
 }
 
 .subtitle, h1 {
@@ -32,8 +52,12 @@ p {
 .formulario{
   width: 600px;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  padding: 20px 50px ;
+  background-color: #55F;
+}
+
+.formulario.dark {
+  background-color: #333;
 }
 
 fieldset {
@@ -44,7 +68,7 @@ input, select {
   outline: none;
   border: none;
 }
- .datapersonal {
+ div.datapersonal {
   margin-bottom: 20px;
  }
 
@@ -56,7 +80,7 @@ input, select {
 margin-bottom: 5px;
 }
 
-label[for="age"], label[for="email"]{
+label[for="email"]{
   display: block;
   margin-top: 15px;
 }
@@ -66,7 +90,7 @@ label[for="back"], label[for="front"], label[for="full"] {
   margin-bottom: 10px ;
 }
 
-.tecno {
+.tech {
   margin-bottom: 10px;
 }
 
@@ -74,6 +98,10 @@ input[type="text"], input[type="email"], select, button, textarea {
   padding: 5px;
   font-size: 14px;
   border-radius: 5px;
+}
+
+input[type="email"] {
+  min-width: 470px;
 }
 
 select, input[type="checkbox"], input[type="radio"], label {
@@ -147,7 +175,23 @@ button {
   text-align: center;
 }
 
+button.dark {
+  background-color: #777;
+}
+
 button:hover{
-  background-color: rgba(112, 128, 144, 0.5);
+  background-color: #70808f80;
   transform: scale(1.05);
+}
+
+@media screen and ( max-width: 895px ) {
+
+  body {
+    margin: auto;
+  }
+  
+  input[type="email"] {
+    min-width: 300px;
+  }
+  
 }
